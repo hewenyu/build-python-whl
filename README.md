@@ -1,23 +1,10 @@
-## 构建需要的docker 镜像包
-
-```bash
-docker build -t pip2pi .
-# 也可以不用构建
-```
-
-
-
-
-
 ## 运行docker 容器
 
 ```bash
+git clone https://github.com/hewenyu/build-python-whl.git && cd build-python-whl
+
 docker-compose up -d
 ```
-
-
-
-
 
 ## 进入到pi p2pi 容器中
 

@@ -1,15 +1,13 @@
 version: '3.5'
 services:
  pip2pi:
-  image: pip2pi
+  image: hewenyulucky/build-whl:last
   volumes:
    - /etc/localtime:/etc/localtime:ro
    - /etc/timezone:/etc/timezone:ro
    - ./requirements.txt:/usr/src/app/requirements.txt:rw
    - ./cache/pip:/root/.cache/pip:rw
    - ./wheel:/usr/src/app/wheels:rw
-  #depends_on:
-  # - nginx
 
  nginx:
   image: nginx
@@ -17,6 +15,5 @@ services:
    - "8080:80/tcp"
   volumes:
    - /etc/localtime:/etc/localtime:ro
-   #- /etc/timezone:/etc/timezone:ro
    - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
    - ./wheel:/usr/share/nginx/html:rw
