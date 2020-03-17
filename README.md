@@ -2,6 +2,7 @@
 
 ```bash
 docker build -t pip2pi .
+# 也可以不用构建
 ```
 
 
