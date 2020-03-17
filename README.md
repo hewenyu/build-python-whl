@@ -18,3 +18,18 @@ pip wheel --wheel-dir=/usr/src/app/wheels -r requirements.txt -i https://pypi.do
 cd wheels  && dir2pi ./
 
 ```
+
+
+
+## 访问url
+
+打开http://ip:8080/simple/
+
+可以安装
+
+```bash
+pip install  -r requirements.txt -i  http://IP:8080/simple/ --trusted-host IP
+```
+
+
+
