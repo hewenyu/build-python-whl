@@ -8,9 +8,7 @@ RUN set -eux && \
     postgresql-dev \
     gcc g++ libffi-dev py-cffi \
     musl-dev \
-    linux-headers
-
-RUN set -eux && \
-    pip install wheel pip2pi -i https://pypi.douban.com/simple
+    linux-headers && \
+    pip install wheel pip2pi -i https://pypi.douban.com/simple    
 
 CMD [ "tail","-f","/dev/null"]
