@@ -6,7 +6,7 @@ git clone https://github.com/hewenyu/build-python-whl.git && cd build-python-whl
 docker-compose up -d
 ```
 
-## 进入到pi p2pi 容器中
+## 进入到pip2pi 容器中
 
 ```bash
 docker exec -it 容器id sh
