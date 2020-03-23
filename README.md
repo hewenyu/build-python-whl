@@ -1,8 +1,13 @@
 ## 运行docker 容器
 
 ```bash
+# 默认使用 python 3.6
 git clone https://github.com/hewenyu/build-python-whl.git && cd build-python-whl
 
+# python 3.6 版本
+# git clone -b py36 https://github.com/hewenyu/build-python-whl.git 
+# python 3.7 版本
+# git clone -b py37 https://github.com/hewenyu/build-python-whl.git 
 docker-compose up -d
 ```
 
