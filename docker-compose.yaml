@@ -1,7 +1,7 @@
 version: '3.5'
 services:
  pip2pi:
-  image: hewenyulucky/build-whl
+  image: hewenyulucky/build-whl:py36
   volumes:
    - /etc/localtime:/etc/localtime:ro
    - /etc/timezone:/etc/timezone:ro
